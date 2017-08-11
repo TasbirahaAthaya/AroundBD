@@ -1,0 +1,148 @@
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.example.sharna.arobangladeshMainActivity"
+        tools:showIn="@layout/activity_main"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="15dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rent My Home"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="40sp"
+            android:background="#BA68C8"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+
+
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Location :"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/location"
+            android:layout_marginBottom="20dp"
+            android:padding="5dp"
+            android:textColor="#000"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address: "
+            android:textSize="20sp"
+            android:id="@+id/ar"
+            android:layout_marginBottom="20dp"
+            android:padding="5dp"
+            android:textColor="#000"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="No of rooms: "
+            android:textSize="20sp"
+            android:id="@+id/phn"
+            android:layout_marginBottom="20dp"
+            android:padding="5dp"
+            android:textColor="#000"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cost per day: "
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"
+            android:padding="5dp"
+            android:textColor="#000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Type of room:"
+            android:textSize="20sp"
+            android:id="@+id/desc"
+            android:textColor="#000000" />
+
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Balcony"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Attached bath"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Food supply:"
+            android:textSize="20sp"
+            android:textColor="#000000" />
+
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton android:id="@+id/radio3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:onClick="onRadioButtonClicked2"/>
+            <RadioButton android:id="@+id/radio4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:onClick="onRadioButtonClicked2"/>
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Description:"
+            android:textSize="20sp"
+            android:id="@+id/des"
+            android:textColor="#000000" />
+
+        <EditText
+            android:layout_width="226dp"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:id="@+id/comp"
+            android:layout_marginLeft="10dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="submit"
+            android:background="#BA68C8"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:onClick="joma1"
+            android:id="@+id/joma"
+            android:clickable="true"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+    </LinearLayout>
+</ScrollView>

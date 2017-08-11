@@ -1,0 +1,65 @@
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView android:text="Vacation rental"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3F51B5"
+            android:textColor="#fff"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="30dp"
+            />
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Location :"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+
+
+            android:layout_marginRight="20dp"
+            android:id="@+id/loc"
+            android:layout_marginBottom="20dp"
+            android:padding="5dp"
+            android:textColor="#000"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address: "
+            android:textSize="20sp"
+            android:id="@+id/ar"
+            android:layout_marginBottom="20dp"
+            android:padding="5dp"
+            android:textColor="#000"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="submit"
+
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:onClick="joma"
+            android:id="@+id/joma"
+            android:clickable="true"
+            android:textStyle="bold"
+            android:background="#BA68C8"
+            android:textSize="20dp" />
+        <ListView
+            android:id="@+id/mylistview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:dividerHeight="6dp"
+            >
+        </ListView>
+    </LinearLayout>
+
+

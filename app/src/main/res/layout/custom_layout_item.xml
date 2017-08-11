@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    >
+    <RelativeLayout
+        android:layout_margin="5dp"
+        android:background="#C5CAE9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+   <ImageView
+       android:id="@+id/postImage"
+       android:layout_width="100dp"
+       android:layout_height="100dp"
+       android:background="@drawable/inani"
+       android:layout_margin="5dp"/>
+    <TextView
+        android:id="@+id/postedby"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Posted By :"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_toRightOf="@+id/postImage"/>
+    <TextView
+        android:id="@+id/postName"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nabila Shahnaz Khan"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_toRightOf="@+id/postedby"/>
+
+    <!--<TextView-->
+        <!--android:id="@+id/contactat"-->
+        <!--android:layout_margin="5dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Contact :"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textSize="14sp"-->
+        <!--android:layout_toRightOf="@+id/postImage"-->
+        <!--android:layout_below="@+id/postName"/>-->
+    <!--<TextView-->
+        <!--android:id="@+id/contactEmail"-->
+        <!--android:layout_margin="5dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="nsk555@gmail.com"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textSize="14sp"-->
+        <!--android:layout_toRightOf="@+id/contactat"-->
+        <!--android:layout_below="@+id/postName"/>-->
+
+    <TextView
+        android:id="@+id/travelledfrom"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From :"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_toRightOf="@+id/postImage"
+        android:layout_below="@+id/postName"/>
+    <TextView
+        android:id="@+id/trSource"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dhaka"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_toRightOf="@+id/travelledfrom"
+        android:layout_below="@+id/postName"/>
+
+    <TextView
+        android:id="@+id/travelledTo"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Destination :"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_toRightOf="@+id/postImage"
+        android:layout_below="@+id/trSource"/>
+    <TextView
+        android:id="@+id/trDestination"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sylhet"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_toRightOf="@+id/travelledTo"
+        android:layout_below="@+id/trSource"/>
+
+    <TextView
+        android:id="@+id/totalcost"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Cost :"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_toRightOf="@+id/postImage"
+        android:layout_below="@+id/trDestination"/>
+    <TextView
+        android:id="@+id/costAmount"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2500"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_toRightOf="@+id/travelledTo"
+        android:layout_below="@+id/trDestination"/>
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="lsdkfjlsafoisadjfsadlfjlskdjfl"
+        android:layout_below="@id/postImage"
+        android:layout_margin="10dp"/>
+    </RelativeLayout>
+</RelativeLayout>
